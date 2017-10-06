@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name                  = "Sparkcentral"
   s.version               = "1.0.1"
-#  s.summary               = "YOUR_SUMMARY"
+  s.summary               = "Demo of RTM SDK"
 #  s.description           = "YOUR_DESCRIPTION"
   s.homepage              = "https://sparkcentral.com/"
-#  s.author                = { "YOU" => "YOUR_EMAIL" }
-  s.source 	              = { :git => "http://github.com:sparkcentral/sparkcentral-ios.git", :tag =>"v#{s.version}" }
+  s.author                = { "Sparkcentral" => "claysmith@sparkcentral.com" }
+  s.source 	              = { :git => "https://github.com/sparkcentral/sparkcentral-ios.git", :tag =>"v#{s.version}" }
   s.license               = { :type => "Commercial", :text => "https://www.sparkcentral.com/tos/" }
   s.source_files          = "Sparkcentral.framework/Headers/Sparkcentral.h", "Sparkcentral.framework/Headers/SKCSettings.h", "Sparkcentral.framework/Headers/SKCUser.h", "Sparkcentral.framework/Headers/SKCConversation.h", "Sparkcentral.framework/Headers/SKCMessage.h", "Sparkcentral.framework/Headers/SKCMessageAction.h", "Sparkcentral.framework/Headers/SKCConversationActivity.h", "Sparkcentral.framework/Headers/SKCCoordinates.h"
   s.preserve_paths        = "Sparkcentral.framework/*"
