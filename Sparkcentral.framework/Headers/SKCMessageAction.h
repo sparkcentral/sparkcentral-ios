@@ -11,6 +11,11 @@
 extern NSString* _Nonnull const SKCMessageActionTypeLink;
 
 /**
+ *  @abstract Type for a webview action.
+ */
+extern NSString* _Nonnull const SKCMessageActionTypeWebview;
+
+/**
  *  @abstract Type for a buy action.
  */
 extern NSString* _Nonnull const SKCMessageActionTypeBuy;
@@ -39,6 +44,21 @@ extern NSString* _Nonnull const SKCMessageActionStateOffered;
  *  @abstract Paid state for a buy message. The user has completed the transaction and payment was successful.
  */
 extern NSString* _Nonnull const SKCMessageActionStatePaid;
+
+/**
+ *  @abstract A full-sized webview
+ */
+extern NSString* _Nonnull const SKCMessageActionWebviewSizeFull;
+
+/**
+ *  @abstract A tall-sized webview
+ */
+extern NSString* _Nonnull const SKCMessageActionWebviewSizeTall;
+
+/**
+ *  @abstract A compact-sized webview
+ */
+extern NSString* _Nonnull const SKCMessageActionWebviewSizeCompact;
 
 /**
  *  @abstract An action associated to a particular SKCMessage.
@@ -71,9 +91,16 @@ extern NSString* _Nonnull const SKCMessageActionStatePaid;
 /**
  *  @abstract The URI to navigate to if the user interacts with the action.
  *
- *  @discussion May not be nil if message is of type `SKCMessageActionTypeLink`
+ *  @discussion May not be nil if message is of type `SKCMessageActionTypeLink` or `SKCMessageActionTypeWebview`
  */
 @property(nullable) NSURL* uri;
+
+/**
+ *  @abstract The size of a webview
+ *
+ *  @discussion May not be nil if message is of type `SKCMessageActionTypeWebview`
+ */
+@property(nullable, copy) NSString* size;
 
 /**
  *  @abstract Metadata associated with the action.

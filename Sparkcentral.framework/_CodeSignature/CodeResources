@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/SKCConversation.h</key>
 		<data>
-		koGEL9jcK5Nv4zVlFsd6WVf6ZZc=
+		EM+aAMzZziCTT1hqHaKU8fmmZhs=
 		</data>
 		<key>Headers/SKCConversationActivity.h</key>
 		<data>
-		exwv+hp5GxzxhjljlT252CB2X4Q=
+		Kv7yEXa6PJokAjwfvNV3Th76AJs=
 		</data>
 		<key>Headers/SKCCoordinates.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/SKCMessageAction.h</key>
 		<data>
-		QAFURT4RQL4PrYcpXCv5+sqgBlg=
+		3NbeFVUHkbYRBFBvCOqac1r/KA0=
 		</data>
 		<key>Headers/SKCSettings.h</key>
 		<data>
-		RdqHMxE/nUDi7334zt1NmRrU8ns=
+		LrMRx8lM6hHycL7H3TryDRWXj0g=
 		</data>
 		<key>Headers/SKCUser.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Headers/Sparkcentral.h</key>
 		<data>
-		YbIuZunzGk+RkhnzWiF1U9o3ldI=
+		HC3THy+xTwoF6ne059CGRG5FIDY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6291Du2x87EaVNDtH8by2OQJQCE=
+		Tk78no0ISgppSM/YMx/pCpB+HQQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,6 +53,18 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>backArrow.png</key>
+		<data>
+		yE5b1yUQWTeXW7Akd/WY7t+x22Y=
+		</data>
+		<key>backArrow@2x.png</key>
+		<data>
+		K62LOF6lPOX85m717fjxI82JKXE=
+		</data>
+		<key>backArrow@3x.png</key>
+		<data>
+		F+56PCXqxEecyhA27oy/tnJKHZI=
+		</data>
 		<key>de.lproj/SparkcentralLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -78,7 +90,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I9aMAWTvFGicGkrczPb/AkKpDa0=
+			LPfgp0GIvWCCS3xv/pqXmAQCpPw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -370,22 +382,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			koGEL9jcK5Nv4zVlFsd6WVf6ZZc=
+			EM+aAMzZziCTT1hqHaKU8fmmZhs=
 			</data>
 			<key>hash2</key>
 			<data>
-			Vk6Fj3LZKOJB/CSrdFmrJa50U/bZTHJjnxfuDN6Wznc=
+			KjD7ofw5w/byiJ+5FpX6eUI3KDjd3gVMFcY2uGS/eJY=
 			</data>
 		</dict>
 		<key>Headers/SKCConversationActivity.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			exwv+hp5GxzxhjljlT252CB2X4Q=
+			Kv7yEXa6PJokAjwfvNV3Th76AJs=
 			</data>
 			<key>hash2</key>
 			<data>
-			r7WmRUUUe3s6TxvXJnN1meXO0UrPStFbzTrSJScicKE=
+			GFZMpJ0rRJOo44Cp47hPANQ8WIjyE3yP1iCC+JW8/BU=
 			</data>
 		</dict>
 		<key>Headers/SKCCoordinates.h</key>
@@ -414,22 +426,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QAFURT4RQL4PrYcpXCv5+sqgBlg=
+			3NbeFVUHkbYRBFBvCOqac1r/KA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			EQVlxavow/Oe63yu1xygj2JmCaOTf3CdXvnbEhI+Jt4=
+			vcVNw/Q3lM2BJ5y/Rfs794qgshtheF+Ru5JCxKntKKU=
 			</data>
 		</dict>
 		<key>Headers/SKCSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RdqHMxE/nUDi7334zt1NmRrU8ns=
+			LrMRx8lM6hHycL7H3TryDRWXj0g=
 			</data>
 			<key>hash2</key>
 			<data>
-			DWaw0BlC3RV+y7AWhw06oLeMHzsRUqhNVjdNacZpKIQ=
+			lLelRKxsWQNrwiHSdagdI23BP1ciUtvb5gy9TRQCQk4=
 			</data>
 		</dict>
 		<key>Headers/SKCUser.h</key>
@@ -447,11 +459,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YbIuZunzGk+RkhnzWiF1U9o3ldI=
+			HC3THy+xTwoF6ne059CGRG5FIDY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YcX3PAL9HZxk21vNiurnaTBl7FAjp+EjFjfYGIl3dQ0=
+			oBH/bwxmVGznkNcbxtVk/dtkhXgweQ9jJZ9/RaeUPbE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -477,6 +489,39 @@
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>backArrow.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yE5b1yUQWTeXW7Akd/WY7t+x22Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			sEwVxIKod9DJt8nHtS5PxOpSeKzOsRmhJha11MJil/8=
+			</data>
+		</dict>
+		<key>backArrow@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			K62LOF6lPOX85m717fjxI82JKXE=
+			</data>
+			<key>hash2</key>
+			<data>
+			l8bn95Guo3VG2Zc6/LSMUkcPtsTPn0WmZus8vhLw55U=
+			</data>
+		</dict>
+		<key>backArrow@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			F+56PCXqxEecyhA27oy/tnJKHZI=
+			</data>
+			<key>hash2</key>
+			<data>
+			otH2xQfLD418ZONfh4Np/TKBct4x14IuBID8vhCkdLs=
+			</data>
 		</dict>
 		<key>de.lproj/SparkcentralLocalizable.strings</key>
 		<dict>
@@ -528,11 +573,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I9aMAWTvFGicGkrczPb/AkKpDa0=
+			LPfgp0GIvWCCS3xv/pqXmAQCpPw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Jrj4x9WuA/wdZ3HWr0kzg3Jd5S7cbFkT6/Br89AdgKk=
+			DWTRAoS8xuskFZ/oX4AY9zt7uYV1chQCpPx8SCG0YZs=
 			</data>
 			<key>optional</key>
 			<true/>
