@@ -1,1 +1,1 @@
-# sparkcentral-ios
+# sparkcentral-ios SDK
