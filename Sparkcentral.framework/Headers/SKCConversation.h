@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "SKCMessage.h"
 #import "SKCMessageAction.h"
+#import "SKCMessageItem.h"
 #import "SKCConversationActivity.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -13,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^SKCImageUploadProgressBlock)(double progress);
 typedef void (^SKCImageUploadCompletionBlock)(NSError* _Nullable error, SKCMessage* _Nullable message);
+typedef void (^SKCFileUploadProgressBlock)(double progress);
+typedef void (^SKCFileUploadCompletionBlock)(NSError* _Nullable error, SKCMessage* _Nullable message);
 
 /**
  *  @discussion Represents various actions the user takes when interacting with Sparkcentral UI components.
@@ -76,6 +79,46 @@ extern NSString* const SKCConversationImageUploadProgressDidChangeNotification;
 extern NSString* const SKCConversationImageUploadCompletedNotification;
 
 /**
+ *  @abstract Posted when a file upload begins.
+ *
+ *  @discussion The userInfo dictionary contains the url of the file to upload. Use SKCConversationFileKey to access this value.
+ *
+ *  This notification is guaranteed to fire on the main thread.
+ *
+ *  @see SKCConversationFileKey
+ */
+extern NSString* const SKCConversationFileUploadDidStartNotification;
+
+/**
+ *  @abstract Posted when a file upload receives a progress update.
+ *
+ *  @discussion The userInfo dictionary contains the url of the file being uploaded, as well as an NSNumber reflecting the current progress. Use SKCConversationFileKey and SKCConversationProgressKey to access these values.
+ *
+ *  This notification is guaranteed to fire on the main thread.
+ *
+ *  @see SKCConversationFileKey
+ *  @see SKCConversationProgressKey
+ */
+extern NSString* const SKCConversationFileUploadProgressDidChangeNotification;
+
+/**
+ *  @abstract Posted when a file upload completes, either in success or failure.
+ *
+ *  @discussion The userInfo dictionary contains the url of the file that was uploaded. Use SKCConversationFileKey to access this value.
+ *
+ *  If the upload succeeded, the userInfo dictionary will also include the SKCMessage instance of the new message. Use SKCConversationMessageKey to access this value.
+ *  If the upload failed, the userInfo dictionary will include the NSError that occurred. Use SKCConversationErrorKey to access this value.
+ *
+ *  This notification is guaranteed to fire on the main thread.
+ *
+ *  @see SKCMessage
+ *  @see SKCConversationFileKey
+ *  @see SKCConversationMessageKey
+ *  @see SKCConversationErrorKey
+ */
+extern NSString* const SKCConversationFileUploadCompletedNotification;
+
+/**
  *  @abstract Posted when new messages are received from the server.
  *
  *  @discussion The userInfo dictionary contains an NSArray of SKCMessage objects. Use SKCConversationNewMessagesKey to access this value.
@@ -134,6 +177,17 @@ extern NSString* const SKCConversationPreviousMessagesKey;
  *  @see SKCConversationImageUploadCompletedNotification
  */
 extern NSString* const SKCConversationImageKey;
+
+/**
+ *  @abstract A key whose value is an NSURL which represents a file being uploaded.
+ *
+ *  @discussion This key is used with SKCConversationFileUploadDidStartNotification, SKCConversationFileUploadProgressDidChangeNotification, and SKCConversationFileUploadCompletedNotification notifications.
+ *
+ *  @see SKCConversationFileUploadDidStartNotification
+ *  @see SKCConversationFileUploadProgressDidChangeNotification
+ *  @see SKCConversationFileUploadCompletedNotification
+ */
+extern NSString* const SKCConversationFileKey;
 
 /**
  *  @abstract A key whose value is an NSError.
@@ -276,6 +330,8 @@ extern NSString* const SKCConversationActivityKey;
  *  @param completionBlock Called when the upload completes or fails. May be nil.
  */
 -(void)sendImage:(UIImage *)image withProgress:(nullable SKCImageUploadProgressBlock)progressBlock completion:(nullable SKCImageUploadCompletionBlock)completionBlock;
+
+-(void)sendFile:(NSURL *)fileLocation withProgress:(nullable SKCFileUploadProgressBlock)progressBlock completion:(nullable SKCFileUploadCompletionBlock)completionBlock;
 
 /**
  *  @abstract Sends a postback to the server.

@@ -96,11 +96,25 @@ extern NSString* _Nonnull const SKCMessageActionWebviewSizeCompact;
 @property(nullable) NSURL* uri;
 
 /**
+ *  @abstract Fallback URI to use for action types not supported by the SDK. May be nil.
+ */
+@property(nullable) NSURL* fallback;
+
+/**
  *  @abstract The size of a webview
  *
  *  @discussion May not be nil if message is of type `SKCMessageActionTypeWebview`
  */
 @property(nullable, copy) NSString* size;
+
+/**
+ *  @abstract Boolean value indicating whether this action is the default action for an SKCMessageItem
+ *
+ *  @discussion Default value is `NO`
+ *
+ *  @see SKCMessageItem
+ */
+@property(readonly) BOOL isDefault;
 
 /**
  *  @abstract Metadata associated with the action.

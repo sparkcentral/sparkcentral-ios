@@ -5,6 +5,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SKCCoordinates.h"
+#import "SKCDisplaySettings.h"
 
 /**
  *  @abstract Notification that is fired when a message fails to upload.
@@ -35,6 +36,16 @@ extern NSString* _Nonnull const SKCMessageTypeLocation;
  *  @abstract A type of message that contains a file and/or text
  */
 extern NSString* _Nonnull const SKCMessageTypeFile;
+
+/**
+ *  @abstract A type of message that contains a horizontally scrollable set of items
+ */
+extern NSString* _Nonnull const SKCMessageTypeCarousel;
+
+/**
+ *  @abstract A type of message that contains a vertically scrollable set of items
+ */
+extern NSString* _Nonnull const SKCMessageTypeList;
 
 /**
  *  @discussion Upload status of an SKCMessage.
@@ -88,6 +99,11 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
 @property(nullable) NSString* text;
 
 /**
+ *  @abstract The text fallback to display for message types not supported by the SDK. May be nil
+ */
+@property(nullable) NSString* textFallback;
+
+/**
  *  @abstract The name of the author. This property may be nil if no name could be determined.
  */
 @property(nullable) NSString* name;
@@ -124,9 +140,23 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
 @property(readonly, nullable) NSArray* actions;
 
 /**
- *  @abstract The url to the image asset, if applicable. Returns nil if the message is not an image message.
+ *  @abstract An array of SKCMessageItem objects representing the items associated with this message
+ *
+ *  @discussion Only messages of type `SKCMessageTypeCarousel` and `SKCMessageTypeList` contain items.
+ *
+ *  @see SKCMessageItem
+ */
+@property(readonly, nullable) NSArray* items;
+
+/**
+ *  @abstract The url to the media asset, if applicable. Returns nil if the message is not an image or file message.
  */
 @property(nullable) NSString* mediaUrl;
+
+/**
+ *  @abstract The size of the media asset in bytes. May be nil.
+ */
+@property(nullable) NSNumber* mediaSize;
 
 /**
  *  @abstract The type the message.
@@ -139,6 +169,13 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
  *  @abstract Coordinates for a location for a message of type SKCMessageTypeLocation
  */
 @property(readonly, nullable) SKCCoordinates *coordinates;
+
+/**
+ *  @abstract Settings to adjust the layout of a message of type SKCMessageTypeCarousel
+ *
+ *  @see SKCDisplaySettings
+ */
+@property(readonly, nullable) SKCDisplaySettings *displaySettings;
 
 /**
  *  @abstract The role of the message.
