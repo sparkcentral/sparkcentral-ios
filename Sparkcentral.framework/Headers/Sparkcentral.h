@@ -2,7 +2,7 @@
 //  Sparkcentral.h
 //  Sparkcentral
 //
-//  version : 1.4.0
+//  version : 1.4.1
 
 #import <Foundation/Foundation.h>
 #import "SKCConversation.h"
@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol UNUserNotificationCenterDelegate;
 
-#define SPARKCENTRAL_VERSION @"1.4.0"
+#define SPARKCENTRAL_VERSION @"1.4.1"
 
 FOUNDATION_EXPORT double SparkcentralVersionNumber;
 FOUNDATION_EXPORT const unsigned char SparkcentralVersionString[];

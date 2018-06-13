@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "Sparkcentral"
-  s.version               = "1.4.0"
+  s.version               = "1.4.1"
   s.summary               = "Sparkcentral ios SDK for customers"
   s.homepage              = "https://sparkcentral.com/"
   s.author                = { "Sparkcentral" => "claysmith@sparkcentral.com" }
