@@ -2,7 +2,7 @@
 //  Sparkcentral.h
 //  Sparkcentral
 //
-//  version : 1.4.1
+//  version : 1.7.0
 
 #import <Foundation/Foundation.h>
 #import "SKCConversation.h"
@@ -12,7 +12,8 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol UNUserNotificationCenterDelegate;
 
-#define SPARKCENTRAL_VERSION @"1.4.1"
+#define SPARKCENTRAL_VERSION @"1.7.0"
+#define VENDOR_ID @"sparkcentral"
 
 FOUNDATION_EXPORT double SparkcentralVersionNumber;
 FOUNDATION_EXPORT const unsigned char SparkcentralVersionString[];
@@ -209,6 +210,15 @@ extern NSString* const SKCLogoutDidFailNotification;
 +(void)show;
 
 /**
+ *  @abstract Presents the Sparkcentral conversation screen with prefilled text in the message input.
+ *
+ *  @discussion Uses the top-most view controller of the `UIApplicationDelegate` as the presenting view controller with prefilled text in the message input.
+ *
+ *  +initWithSettings:completionHandler: must have been called prior to calling this method.
+ */
++(void)showWithStartingText:(nullable NSString *)startingText;
+
+/**
  *  @abstract Dismisses the Sparkcentral conversation, if shown.
  *
  *  @discussion Note: If a view controller was created and presented using `newConversationViewController`, calling this method will have no effect.
@@ -235,6 +245,15 @@ extern NSString* const SKCLogoutDidFailNotification;
 +(void)showConversationFromViewController:(UIViewController*)viewController;
 
 /**
+ *  @abstract Presents the Sparkcentral conversation screen, using the given view controller as presenting view controller with prefilled text in the message input.
+ *
+ *  @discussion In most cases, it is better to use +show. If you need more fine-grained control over which view controller is used as presenting view controller, use this method instead.
+ *
+ *  +initWithSettings:completionHandler: must have been called prior to calling this method.
+ */
++(void)showConversationFromViewController:(UIViewController*)viewController withStartingText:(nullable NSString *)startingText;
+
+/**
  *  @abstract Creates and returns a Sparkcentral conversation view controller.
  *
  *  @discussion You may use this view controller to embed the conversation in a navigation controller, to change the modal presentation style, or display it in any way you choose.
@@ -246,6 +265,19 @@ extern NSString* const SKCLogoutDidFailNotification;
  *  @return A new instance of the Sparkcentral conversation view controller class. Returns nil if +initWithSettings:completionHandler: hasn't been called
  */
 +(nullable UIViewController*)newConversationViewController;
+
+/**
+ *  @abstract Creates and returns a Sparkcentral conversation view controller with prefilled text in the message input.
+ *
+ *  @discussion You may use this view controller to embed the conversation in a navigation controller, to change the modal presentation style, or display it in any way you choose. The message input will be prefilled with the given `startingText`
+ *
+ *  A view controller created in this way is tied to the current user's conversation at creation time. If the current user changes (i.e. by calling +login:jwt:completionHandler: or +logoutWithCompletionHandler:), the view controller is invalidated and must be recreated for the new user.
+ *
+ *  Note: It is the responsibility of the caller to show, hide, and maintain a reference to this view controller. Calling `close` will not dismiss a view controller created in this way.
+ *
+ *  @return A new instance of the Sparkcentral conversation view controller class. Returns nil if +initWithSettings:completionHandler: hasn't been called
+ */
++(nullable UIViewController*)newConversationViewControllerWithStartingText:(nullable NSString *)startingText;
 
 /**
  *  @abstract Sets the current user's first and last name to be used as a display name when sending messages.
