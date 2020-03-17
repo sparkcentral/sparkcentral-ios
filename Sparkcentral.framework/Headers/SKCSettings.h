@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SKCAuthenticationDelegate.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -78,6 +79,15 @@ extern NSString * const SKCMenuItemLocation;
  *  The default value is #00B0FF.
  */
 @property(nonatomic, strong) UIColor* conversationAccentColor;
+
+/**
+ *  @abstract The text color for user messages.
+ *
+ *  @discussion Used as the text color of user message bubbles.
+ *
+ *  The default value is #FFFFFF.
+ */
+@property(nonatomic, strong) UIColor* userMessageTextColor;
 
 /**
  *  @abstract The status bar style to use on the conversation screen.
@@ -163,6 +173,17 @@ extern NSString * const SKCMenuItemLocation;
  *  @see Sparkcentral
  */
 @property BOOL requestPushPermissionOnFirstMessage;
+
+/**
+ *  @abstract Delegate that will be notified of authentication related events
+ *
+ *  @discussion This delegate is useful if your app uses expiring tokens for your users. This way you can renew an invalid jwt when needed without having to call +login:jwt:completionHandler. May be nil
+ *
+ *  This value may only be set once, and must be set at init time.
+ *
+ *  @see SKCAuthenticationDelegate
+ */
+@property(nullable) id<SKCAuthenticationDelegate> authenticationDelegate;
 
 @end
 NS_ASSUME_NONNULL_END

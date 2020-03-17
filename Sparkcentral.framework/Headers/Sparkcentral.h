@@ -2,7 +2,7 @@
 //  Sparkcentral.h
 //  Sparkcentral
 //
-//  version : 1.7.0
+//  version : 2.1.1
 
 #import <Foundation/Foundation.h>
 #import "SKCConversation.h"
@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol UNUserNotificationCenterDelegate;
 
-#define SPARKCENTRAL_VERSION @"1.7.0"
+#define SPARKCENTRAL_VERSION @"2.1.1"
 #define VENDOR_ID @"sparkcentral"
 
 FOUNDATION_EXPORT double SparkcentralVersionNumber;
@@ -407,6 +407,21 @@ extern NSString* const SKCLogoutDidFailNotification;
 /**
  *  @abstract Handle the user input from a reply type notification action.
  *
+ *  @discussion Call this method in your -application:handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler:, passing the action identifier, userInfo dictionary, responseInfo dictionary, and completionHandler callback.
+ *
+ *  This method will post a message on behalf of the user, with the contents of their inline reply. When the message upload completes (either in success or failure), the completion handler will be called.
+ *
+ *  If the action identifier does not match SKCUserNotificationReplyActionIdentifier, the completion handler will be called immediately and the notification will be ignored.
+ *
+ *  This method is called automatically if SKCSettings.enableAppDelegateSwizzling is set to YES.
+ *
+ *  @see SKCSettings
+ */
++(void)handleUserNotificationActionWithIdentifier:(NSString *)identifier forRemoteNotification:(NSDictionary *)userInfo withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)(void))completionHandler;
+
+/**
+ *  @abstract Handle the user input from a reply type notification action.
+ *
  *  @discussion Call this method in your -application:handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler:, passing the action identifier, responseInfo dictionary, and completionHandler callback.
  *
  *  This method will post a message on behalf of the user, with the contents of their inline reply. When the message upload completes (either in success or failure), the completion handler will be called.
@@ -416,6 +431,7 @@ extern NSString* const SKCLogoutDidFailNotification;
  *  This method is called automatically if SKCSettings.enableAppDelegateSwizzling is set to YES.
  *
  *  @see SKCSettings
+ *  @deprecated use +handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler: instead.
  */
 +(void)handleUserNotificationActionWithIdentifier:(NSString *)identifier withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)(void))completionHandler;
 
@@ -431,6 +447,15 @@ extern NSString* const SKCLogoutDidFailNotification;
  *  @see SKCSettings
  */
 +(NSSet*)userNotificationCategories;
+
+/**
+ *  @abstract Loads a conversation by its ID and sets it as the active conversation for the current session.
+ *
+ *  @discussion When called, subscribes the current device for push notifications on the passed conversationId, and sets the SDK to send and receive messages for that conversation going forward. Does not unsubscribe for notification on previously loaded conversations.
+ *
+ *  If the conversation is already set to the passed ID, this call is a no-op.
+ */
++(void)loadConversation:(NSString*)conversationId completionHandler:(nullable void(^)(NSError * _Nullable error, NSDictionary * _Nullable userInfo))completionHandler;
 
 @end
 NS_ASSUME_NONNULL_END

@@ -4,9 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		Z5xsOArklCppDYO2mMXn73gDCmI=
+		</data>
+		<key>Headers/SKCAuthenticationDelegate.h</key>
+		<data>
+		SSLk8uk4RLucbsbRSgk75G7pSlw=
+		</data>
 		<key>Headers/SKCConversation.h</key>
 		<data>
-		AjhfzhSdfV+Qx/R3nzdL3Y3eojE=
+		lJakPUsRoZHmbcrPUJwLPoS/FM0=
 		</data>
 		<key>Headers/SKCConversationActivity.h</key>
 		<data>
@@ -34,7 +42,7 @@
 		</data>
 		<key>Headers/SKCSettings.h</key>
 		<data>
-		oF5OCPZMV4wUYEZJyNnqF2F8Nbw=
+		+t8ILPgAWSaBS54KzxS/S7dlWGU=
 		</data>
 		<key>Headers/SKCUser.h</key>
 		<data>
@@ -42,11 +50,11 @@
 		</data>
 		<key>Headers/Sparkcentral.h</key>
 		<data>
-		ZxWhc4FADnta7+nr676RaWHBv50=
+		i6MmXeLcjdpiK5DM4OZF4MSzr6w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MeSML/BpnbYr6LWhqWWRzkYvopU=
+		TNVakc+QkNwXyJNjrtFMxi0Xv0Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -410,15 +418,37 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Z5xsOArklCppDYO2mMXn73gDCmI=
+			</data>
+			<key>hash2</key>
+			<data>
+			8BIBCvIvcwPwnZ38uu5nb69HfTgljMeI4BAjZt80U8U=
+			</data>
+		</dict>
+		<key>Headers/SKCAuthenticationDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SSLk8uk4RLucbsbRSgk75G7pSlw=
+			</data>
+			<key>hash2</key>
+			<data>
+			BP+rvnoWfhXzQSoy8QQUqiWxWJ4il9ICSXdnK6zWu0E=
+			</data>
+		</dict>
 		<key>Headers/SKCConversation.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AjhfzhSdfV+Qx/R3nzdL3Y3eojE=
+			lJakPUsRoZHmbcrPUJwLPoS/FM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			qopmaO/gGYAP4LFZkvIkcqrEOZWyni1KJbVATo9uT3U=
+			plSqbZZyqyPrYwiZ2cRY10/s6GMT0Og3yt0sDwgzW28=
 			</data>
 		</dict>
 		<key>Headers/SKCConversationActivity.h</key>
@@ -491,11 +521,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oF5OCPZMV4wUYEZJyNnqF2F8Nbw=
+			+t8ILPgAWSaBS54KzxS/S7dlWGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			5rorJ29/MTlMUI6Cf0zfvCMwGZup7FZJudT7Q8sLgJs=
+			TIY2RchKw5ZxFY4U85bL1iVKmC3XLVP9bTDD3cFKWh8=
 			</data>
 		</dict>
 		<key>Headers/SKCUser.h</key>
@@ -513,11 +543,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZxWhc4FADnta7+nr676RaWHBv50=
+			i6MmXeLcjdpiK5DM4OZF4MSzr6w=
 			</data>
 			<key>hash2</key>
 			<data>
-			P4HCH6dAlNZ6JLZOWHlfNDzRE2w7xbJv8mFuVVpFnNg=
+			B3udtdiFWZNOpLUWCOqvmy8GAzkB4X82FXIrxUPYFx0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1287,7 +1317,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -1318,24 +1348,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -1371,13 +1389,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
