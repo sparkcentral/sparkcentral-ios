@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Z5xsOArklCppDYO2mMXn73gDCmI=
+		x0Wm6CbldFEnGJ/MVEV6AATLBS4=
 		</data>
 		<key>Headers/SKCAuthenticationDelegate.h</key>
 		<data>
@@ -14,11 +14,15 @@
 		</data>
 		<key>Headers/SKCConversation.h</key>
 		<data>
-		lJakPUsRoZHmbcrPUJwLPoS/FM0=
+		Z8FKVzMBfg/8HahHQ/2voK6D1G4=
 		</data>
 		<key>Headers/SKCConversationActivity.h</key>
 		<data>
-		Kv7yEXa6PJokAjwfvNV3Th76AJs=
+		RUUWxfJY24fiCLUnqXSaAwK5MYo=
+		</data>
+		<key>Headers/SKCConversationListDelegate.h</key>
+		<data>
+		XUxOJYhTefZSItiGeAS20R/hPec=
 		</data>
 		<key>Headers/SKCCoordinates.h</key>
 		<data>
@@ -30,7 +34,7 @@
 		</data>
 		<key>Headers/SKCMessage.h</key>
 		<data>
-		M7iMmt0Crl9ibAIfQL4IioVMnp8=
+		5aukk1UeJWHYa4+lbQ9yHrFPHKk=
 		</data>
 		<key>Headers/SKCMessageAction.h</key>
 		<data>
@@ -40,21 +44,25 @@
 		<data>
 		w+qWTQGp85HorVw/FZaIz/KKeZk=
 		</data>
+		<key>Headers/SKCParticipant.h</key>
+		<data>
+		rOXqgmYvWPTJRwpcqz3XrdH2ABo=
+		</data>
 		<key>Headers/SKCSettings.h</key>
 		<data>
-		+t8ILPgAWSaBS54KzxS/S7dlWGU=
+		B459oydWvpYJStI613w0mKrIT/g=
 		</data>
 		<key>Headers/SKCUser.h</key>
 		<data>
-		6ppYk8PjhIamtf7sWx6Ns3PqtUg=
+		qqcOucsI4WTjxIqgbFT9SmxG3P0=
 		</data>
 		<key>Headers/Sparkcentral.h</key>
 		<data>
-		i6MmXeLcjdpiK5DM4OZF4MSzr6w=
+		jjckFCEaBC5UIcpnSNj1imcT+N0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		TNVakc+QkNwXyJNjrtFMxi0Xv0Q=
+		MRcS2DAi2TGqoksCxt2/KJFQ6ak=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -92,21 +100,21 @@
 		</dict>
 		<key>defaultAvatar.png</key>
 		<data>
-		KUlteWt3bD7FtW9e5UvGyNaGdiM=
+		OZrFqRvrN6tKT5LTwrfaSlOex8g=
 		</data>
 		<key>defaultAvatar@2x.png</key>
 		<data>
-		iCkT3JYa0ymYWLa34vbtlly3Ojs=
+		91Wh0HsQx2FIhmkMvubCeR87C2I=
 		</data>
 		<key>defaultAvatar@3x.png</key>
 		<data>
-		TZd5cyF3OEqqsb/57QV/ZoXvAT4=
+		pjvmRub+S81+lWD3rW9phEW3cKM=
 		</data>
 		<key>en.lproj/SparkcentralLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FRhNPQ3Dpb2UtP1is1wLmRhA4Xs=
+			1ndChTWcz8GC1g8g/ka3ZYUNrVo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -422,11 +430,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z5xsOArklCppDYO2mMXn73gDCmI=
+			x0Wm6CbldFEnGJ/MVEV6AATLBS4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8BIBCvIvcwPwnZ38uu5nb69HfTgljMeI4BAjZt80U8U=
+			wKOC3rR+iM1LTsCd2oruUHxx5oeduXRX5lQ+zIok3Mc=
 			</data>
 		</dict>
 		<key>Headers/SKCAuthenticationDelegate.h</key>
@@ -444,22 +452,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lJakPUsRoZHmbcrPUJwLPoS/FM0=
+			Z8FKVzMBfg/8HahHQ/2voK6D1G4=
 			</data>
 			<key>hash2</key>
 			<data>
-			plSqbZZyqyPrYwiZ2cRY10/s6GMT0Og3yt0sDwgzW28=
+			I/MPKg6AmtF8Wbt9flAb6qxsX93BitkFFFAoeCCFoRk=
 			</data>
 		</dict>
 		<key>Headers/SKCConversationActivity.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Kv7yEXa6PJokAjwfvNV3Th76AJs=
+			RUUWxfJY24fiCLUnqXSaAwK5MYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			GFZMpJ0rRJOo44Cp47hPANQ8WIjyE3yP1iCC+JW8/BU=
+			hv1JWINPVWlXwnqlRyqetnLIXC2Pwce9uQruMq/2NJo=
+			</data>
+		</dict>
+		<key>Headers/SKCConversationListDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUxOJYhTefZSItiGeAS20R/hPec=
+			</data>
+			<key>hash2</key>
+			<data>
+			pm5HWhxzmPikup7XQ8MLvDwzE4jKB/L0+3jDw6PsFkg=
 			</data>
 		</dict>
 		<key>Headers/SKCCoordinates.h</key>
@@ -488,11 +507,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M7iMmt0Crl9ibAIfQL4IioVMnp8=
+			5aukk1UeJWHYa4+lbQ9yHrFPHKk=
 			</data>
 			<key>hash2</key>
 			<data>
-			4XO0m9M8KIYTIP2vcOnwm2CrwkvVHhrgZBdJhyeRDjg=
+			rdaLCTS3v6sp1VVDHlbQSIzqJHf37ffKZQCnl6HAYTw=
 			</data>
 		</dict>
 		<key>Headers/SKCMessageAction.h</key>
@@ -517,37 +536,48 @@
 			f7zohhvrT3vRMy+usV4DLW3lP4yXBJQKMOAfns4odm0=
 			</data>
 		</dict>
+		<key>Headers/SKCParticipant.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rOXqgmYvWPTJRwpcqz3XrdH2ABo=
+			</data>
+			<key>hash2</key>
+			<data>
+			oK0wEsjbz0cjXW3dVDS7FHvwzXIG/E3P6ekJyKD8phE=
+			</data>
+		</dict>
 		<key>Headers/SKCSettings.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+t8ILPgAWSaBS54KzxS/S7dlWGU=
+			B459oydWvpYJStI613w0mKrIT/g=
 			</data>
 			<key>hash2</key>
 			<data>
-			TIY2RchKw5ZxFY4U85bL1iVKmC3XLVP9bTDD3cFKWh8=
+			GJ1Vb6C7ncEnfJjBV+UwkNQ6maNZDFZI7w0bkpqiiJE=
 			</data>
 		</dict>
 		<key>Headers/SKCUser.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6ppYk8PjhIamtf7sWx6Ns3PqtUg=
+			qqcOucsI4WTjxIqgbFT9SmxG3P0=
 			</data>
 			<key>hash2</key>
 			<data>
-			TBWlGlo6g5AkJngY60O7mJ1lGqoYy8mgkoFboXyAQmo=
+			8pZnFNEkLAT73lo1NBSzl1d8RjcC8IRruX5AvEakRHA=
 			</data>
 		</dict>
 		<key>Headers/Sparkcentral.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			i6MmXeLcjdpiK5DM4OZF4MSzr6w=
+			jjckFCEaBC5UIcpnSNj1imcT+N0=
 			</data>
 			<key>hash2</key>
 			<data>
-			B3udtdiFWZNOpLUWCOqvmy8GAzkB4X82FXIrxUPYFx0=
+			DKJgqFsmmUct7pnfQpzGKC43CWCGjHHzM0kINRrqbbs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -624,44 +654,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KUlteWt3bD7FtW9e5UvGyNaGdiM=
+			OZrFqRvrN6tKT5LTwrfaSlOex8g=
 			</data>
 			<key>hash2</key>
 			<data>
-			36Dbw64VyPpO54vkxBdUk6e1G14adAUrbyJldNj+bNc=
+			vycLOiz8GUIWLTmAXuBUqM8XuxWbxkA2YnEUwDnfYIc=
 			</data>
 		</dict>
 		<key>defaultAvatar@2x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iCkT3JYa0ymYWLa34vbtlly3Ojs=
+			91Wh0HsQx2FIhmkMvubCeR87C2I=
 			</data>
 			<key>hash2</key>
 			<data>
-			6+9k7uthCfG1+gXQDCImz57Y44J2M2d0kBZf1+9Z7bw=
+			wJzL52maBXDocB/a4+7MYu1BTCuWYvvYJnb45ZD5ojM=
 			</data>
 		</dict>
 		<key>defaultAvatar@3x.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TZd5cyF3OEqqsb/57QV/ZoXvAT4=
+			pjvmRub+S81+lWD3rW9phEW3cKM=
 			</data>
 			<key>hash2</key>
 			<data>
-			bwLoRlYPt909pA5muZtF7nlG5+9gs8p6VuE6ikxsfNo=
+			7sJspuKkjgToxucLPxYzacL1PMDzQjHG70kKCLGXcDo=
 			</data>
 		</dict>
 		<key>en.lproj/SparkcentralLocalizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FRhNPQ3Dpb2UtP1is1wLmRhA4Xs=
+			1ndChTWcz8GC1g8g/ka3ZYUNrVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			iEY3aOd4lH8iC1GxcNmue722d1aCJg4kvihrE0Qmwfw=
+			5tPErebdQhiE1ZKz8lxUqJcOYgWXZV+V6vieLYizquM=
 			</data>
 			<key>optional</key>
 			<true/>

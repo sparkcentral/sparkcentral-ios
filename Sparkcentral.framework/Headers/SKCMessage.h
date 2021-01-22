@@ -71,7 +71,7 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
     SKCMessageUploadStatusNotUserMessage
 };
 
-@interface SKCMessage : NSObject
+@interface SKCMessage : NSObject <NSSecureCoding>
 
 /**
  *  @abstract Create a message with the given text. The message will be owned by the current user.
@@ -104,9 +104,9 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
 @property(nullable) NSString* textFallback;
 
 /**
- *  @abstract The name of the author. This property may be nil if no name could be determined.
+ *  @abstract The displayName of the author. This property may be nil if no displayName could be determined.
  */
-@property(nullable) NSString* name;
+@property(nullable) NSString* displayName;
 
 /**
  *  @abstract The url for the author's avatar image. May be nil
@@ -121,7 +121,7 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
 /**
  *  @abstract Returns YES if the message originated from the user, or NO if the message comes from the app team.
  */
-@property(readonly) BOOL isFromCurrentUser;
+@property (nonatomic) BOOL isFromCurrentUser;
 
 /**
  *  @abstract The upload status of the message.
@@ -180,7 +180,7 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
 /**
  *  @abstract The role of the message.
  *
- *  @discussion Valid roles include `appUser`, `appMaker`, and `whisper`. Messages created with -initWithText: have role of `appUser`.
+ *  @discussion Valid roles include `appUser`, `business`, and `whisper`. Messages created with -initWithText: have role of `appUser`.
  */
 @property(readonly, nullable) NSString* role;
 

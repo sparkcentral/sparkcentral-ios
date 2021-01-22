@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, SKCAction) {
  *
  *  @see SKCConversation
  */
-extern NSString* const SKCConversationUnreadCountDidChangeNotification;
+extern NSString * const SKCConversationUnreadCountDidChangeNotification;
 
 /**
  *  @abstract Posted when an image upload begins.
@@ -47,7 +47,7 @@ extern NSString* const SKCConversationUnreadCountDidChangeNotification;
  *
  *  @see SKCConversationImageKey
  */
-extern NSString* const SKCConversationImageUploadDidStartNotification;
+extern NSString * const SKCConversationImageUploadDidStartNotification;
 
 /**
  *  @abstract Posted when an image upload receives a progress update.
@@ -59,7 +59,7 @@ extern NSString* const SKCConversationImageUploadDidStartNotification;
  *  @see SKCConversationImageKey
  *  @see SKCConversationProgressKey
  */
-extern NSString* const SKCConversationImageUploadProgressDidChangeNotification;
+extern NSString * const SKCConversationImageUploadProgressDidChangeNotification;
 
 /**
  *  @abstract Posted when an image upload completes, either in success or failure.
@@ -76,7 +76,7 @@ extern NSString* const SKCConversationImageUploadProgressDidChangeNotification;
  *  @see SKCConversationMessageKey
  *  @see SKCConversationErrorKey
  */
-extern NSString* const SKCConversationImageUploadCompletedNotification;
+extern NSString * const SKCConversationImageUploadCompletedNotification;
 
 /**
  *  @abstract Posted when a file upload begins.
@@ -87,7 +87,7 @@ extern NSString* const SKCConversationImageUploadCompletedNotification;
  *
  *  @see SKCConversationFileKey
  */
-extern NSString* const SKCConversationFileUploadDidStartNotification;
+extern NSString * const SKCConversationFileUploadDidStartNotification;
 
 /**
  *  @abstract Posted when a file upload receives a progress update.
@@ -99,7 +99,7 @@ extern NSString* const SKCConversationFileUploadDidStartNotification;
  *  @see SKCConversationFileKey
  *  @see SKCConversationProgressKey
  */
-extern NSString* const SKCConversationFileUploadProgressDidChangeNotification;
+extern NSString * const SKCConversationFileUploadProgressDidChangeNotification;
 
 /**
  *  @abstract Posted when a file upload completes, either in success or failure.
@@ -116,7 +116,7 @@ extern NSString* const SKCConversationFileUploadProgressDidChangeNotification;
  *  @see SKCConversationMessageKey
  *  @see SKCConversationErrorKey
  */
-extern NSString* const SKCConversationFileUploadCompletedNotification;
+extern NSString * const SKCConversationFileUploadCompletedNotification;
 
 /**
  *  @abstract Posted when new messages are received from the server.
@@ -126,7 +126,7 @@ extern NSString* const SKCConversationFileUploadCompletedNotification;
  *  @see SKCMessage
  *  @see SKCConversationNewMessagesKey
  */
-extern NSString* const SKCConversationDidReceiveMessagesNotification;
+extern NSString * const SKCConversationDidReceiveMessagesNotification;
 
 /**
  *  @abstract Posted when an operation to load previous messages in a conversation has been completed
@@ -139,7 +139,7 @@ extern NSString* const SKCConversationDidReceiveMessagesNotification;
  *  @see SKCMessage
  *  @see SKCConversationPreviousMessagesKey
  */
-extern NSString* const SKCConversationDidReceivePreviousMessagesNotification;
+extern NSString * const SKCConversationDidReceivePreviousMessagesNotification;
 
 /**
  *  @abstract Posted when a conversation activity has been created, such as typing start/stop
@@ -147,7 +147,7 @@ extern NSString* const SKCConversationDidReceivePreviousMessagesNotification;
  *  @see SKCConversationActivity
  *  @see SKCConversationActivityKey
  */
-extern NSString* const SKCConversationDidReceiveActivityNotification;
+extern NSString * const SKCConversationDidReceiveActivityNotification;
 
 /**
  *  @abstract A key whose value is an NSArray of SKCMessage objects.
@@ -156,7 +156,7 @@ extern NSString* const SKCConversationDidReceiveActivityNotification;
  *
  *  @see SKCConversationDidReceiveMessagesNotification
  */
-extern NSString* const SKCConversationNewMessagesKey;
+extern NSString * const SKCConversationNewMessagesKey;
 
 /**
  *  @abstract A key whose value is an NSArray of SKCMessage objects
@@ -165,7 +165,7 @@ extern NSString* const SKCConversationNewMessagesKey;
  *
  *  @see SKCConversationDidReceivePreviousMessagesNotification
  */
-extern NSString* const SKCConversationPreviousMessagesKey;
+extern NSString * const SKCConversationPreviousMessagesKey;
 
 /**
  *  @abstract A key whose value is a UIImage which represents an image being uploaded.
@@ -176,7 +176,7 @@ extern NSString* const SKCConversationPreviousMessagesKey;
  *  @see SKCConversationImageUploadProgressDidChangeNotification
  *  @see SKCConversationImageUploadCompletedNotification
  */
-extern NSString* const SKCConversationImageKey;
+extern NSString * const SKCConversationImageKey;
 
 /**
  *  @abstract A key whose value is an NSURL which represents a file being uploaded.
@@ -187,7 +187,7 @@ extern NSString* const SKCConversationImageKey;
  *  @see SKCConversationFileUploadProgressDidChangeNotification
  *  @see SKCConversationFileUploadCompletedNotification
  */
-extern NSString* const SKCConversationFileKey;
+extern NSString * const SKCConversationFileKey;
 
 /**
  *  @abstract A key whose value is an NSError.
@@ -196,7 +196,7 @@ extern NSString* const SKCConversationFileKey;
  *
  *  @see SKCConversationImageUploadCompletedNotification
  */
-extern NSString* const SKCConversationErrorKey;
+extern NSString * const SKCConversationErrorKey;
 
 /**
  *  @abstract A key whose value is an SKCMessage object representing the newly created message.
@@ -205,7 +205,7 @@ extern NSString* const SKCConversationErrorKey;
  *
  *  @see SKCConversationImageUploadCompletedNotification
  */
-extern NSString* const SKCConversationMessageKey;
+extern NSString * const SKCConversationMessageKey;
 
 /**
  *  @abstract A key whose value is an NSNumber reflecting the current progress of an image upload.
@@ -214,7 +214,7 @@ extern NSString* const SKCConversationMessageKey;
  *
  *  @see SKCConversationImageUploadProgressDidChangeNotification
  */
-extern NSString* const SKCConversationProgressKey;
+extern NSString * const SKCConversationProgressKey;
 
 /**
  *  @abstract A key whose value is a SKCConversationActivity object representing the newly created activity
@@ -223,7 +223,7 @@ extern NSString* const SKCConversationProgressKey;
  *
  *  @see SKCConversationDidReceiveActivityNotification
  */
-extern NSString* const SKCConversationActivityKey;
+extern NSString * const SKCConversationActivityKey;
 
 /**
  *  @discussion The SKCConversation class provides an interface to interact with the current user's conversation.
@@ -247,19 +247,19 @@ extern NSString* const SKCConversationActivityKey;
  *  @see SKCMessage
  *  @see Sparkcentral
  */
-@interface SKCConversation : NSObject
+@interface SKCConversation : NSObject <NSSecureCoding>
 
 /**
  *  @abstract The unique identifier of the conversation. May be nil if a conversation doesn't exist for the current user
  */
-@property(readonly, nullable) NSString* conversationId;
+@property(readonly, nullable) NSString *conversationId;
 
 /**
  *  @abstract The array of SKCMessage objects representing the conversation.
  *
  *  @see SKCMessage
  */
-@property(readonly, nullable) NSArray* messages;
+@property(readonly, nullable) NSArray *messages;
 
 /**
  *  @abstract The total number of messages in the conversation, including user-generated messages.
@@ -276,14 +276,14 @@ extern NSString* const SKCConversationActivityKey;
 /**
  *  @abstract Date when the business last read the user messages
  */
-@property(readonly) NSDate *appMakerLastRead;
+@property(readonly, nullable) NSDate *businessLastRead;
 
 /**
  *  @abstract Metadata associated with the conversation.
  *
  *  @discussion A flat dictionary of metadata set through the REST API. May be nil.
  */
-@property(readonly, nullable) NSDictionary* metadata;
+@property(readonly, nullable) NSDictionary *metadata;
 
 /**
  *  @abstract A delegate object for receiving notifications related to the conversation.
@@ -291,7 +291,6 @@ extern NSString* const SKCConversationActivityKey;
  *  @see SKCConversationDelegate
  */
 @property(weak, nullable) id<SKCConversationDelegate> delegate;
-
 
 /**
  *  @abstract Boolean representing whether there are previous messages in the conversation that can be fetched or not
@@ -301,20 +300,55 @@ extern NSString* const SKCConversationActivityKey;
 @property(readonly) BOOL hasPreviousMessages;
 
 /**
+ *  @abstract NSDate representation of when the conversation was last updated.
+ *
+ *  @discussion NSDate object set through the REST API and Web Socket. May be nil.
+ */
+@property(readonly, nullable) NSDate *lastUpdatedAt;
+
+/**
+ *  @abstract A display name for the conversation.
+ *
+ *  @discussion This is set when a conversation is created. Can be nil.
+ */
+@property(readonly, nullable) NSString *displayName;
+
+/**
+ *  @abstract A conversation description for the conversation.
+ *
+ *  @discussion This is set when a conversation is created. Can be nil.
+ */
+@property(readonly, nullable) NSString *conversationDescription;
+
+/**
+ *  @abstract A iconUrl for the conversation.
+ *
+ *  @discussion This is set when a conversation is created. Can be nil.
+ */
+@property(readonly, nullable) NSString *iconUrl;
+
+/**
+ *  @abstract An array of SKCParticipant objects currently in the conversation.
+ *
+ *  @see SKCParticipant
+ */
+@property(readonly, nullable) NSArray *participants;
+
+/**
  *  @abstract Marks all unread messages as read.
  *
  *  @discussion Marks all unread messages as read, and notifies that the unread count changed.
  *
  *  @see SKCMessage
  */
--(void)markAllAsRead;
+- (void)markAllAsRead;
 
 /**
  *  @abstract Loads previous messages for this conversation, if any
  *
  *  @discussion Will get previous messages for this conversation based on the timestamp of the current oldest message and will notify the delegate of new incoming messages through [SKCConversationDelegate conversation:didReceivePreviousMessages:]
  */
--(void)loadPreviousMessages;
+- (void)loadPreviousMessages;
 
 /**
  *  @abstract Adds a new message to the conversation.
@@ -324,7 +358,7 @@ extern NSString* const SKCConversationActivityKey;
  *  @see SKCMessageUploadFailedNotification
  *  @see SKCMessageUploadCompletedNotification
  */
--(void)sendMessage:(SKCMessage*)message;
+- (void)sendMessage:(SKCMessage *)message;
 
 /**
  *  @abstract Adds an image message to the conversation.
@@ -341,9 +375,13 @@ extern NSString* const SKCConversationActivityKey;
  *  @param progressBlock Called to report progress updates. May be nil.
  *  @param completionBlock Called when the upload completes or fails. May be nil.
  */
--(void)sendImage:(UIImage *)image withProgress:(nullable SKCImageUploadProgressBlock)progressBlock completion:(nullable SKCImageUploadCompletionBlock)completionBlock;
+- (void)sendImage:(UIImage *)image
+     withProgress:(nullable SKCImageUploadProgressBlock)progressBlock
+       completion:(nullable SKCImageUploadCompletionBlock)completionBlock;
 
--(void)sendFile:(NSURL *)fileLocation withProgress:(nullable SKCFileUploadProgressBlock)progressBlock completion:(nullable SKCFileUploadCompletionBlock)completionBlock;
+- (void)sendFile:(NSURL *)fileLocation
+    withProgress:(nullable SKCFileUploadProgressBlock)progressBlock
+      completion:(nullable SKCFileUploadCompletionBlock)completionBlock;
 
 /**
  *  @abstract Sends a postback to the server.
@@ -357,7 +395,8 @@ extern NSString* const SKCConversationActivityKey;
  *  @param messageAction The messageAction for which to send the postback. Must not be nil.
  *  @param completionBlock Called when the postback completes or fails. May be nil.
  */
--(void)postback:(SKCMessageAction*)messageAction completion:(nullable void (^)(NSError* _Nullable error))completionBlock;
+- (void)postback:(SKCMessageAction *)messageAction
+      completion:(nullable void (^)(NSError * _Nullable error))completionBlock;
 
 /**
  *  @abstract Retries a message that failed to send.
@@ -367,7 +406,7 @@ extern NSString* const SKCConversationActivityKey;
  *  @see SKCMessageUploadFailedNotification
  *  @see SKCMessageUploadCompletedNotification
  */
--(void)retryMessage:(SKCMessage*)failedMessage;
+- (void)retryMessage:(SKCMessage *)failedMessage;
 
 /**
  *  @abstract Notify the server that the user is typing.
@@ -376,7 +415,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  Typing updates are automatically throttled, so you may call this method as often as necessary. The typing stop event will automatically fire 10 seconds after the most recent call to this method.
  */
--(void)startTyping;
+- (void)startTyping;
 
 /**
  *  @abstract Notify the server that the user has finished typing.
@@ -385,7 +424,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  If the user was not flagged as typing recently, this method will result in a no-op.
  */
--(void)stopTyping;
+- (void)stopTyping;
 
 @end
 
@@ -407,7 +446,7 @@ extern NSString* const SKCConversationActivityKey;
  *  @param conversation The conversation object that initiated the change.
  *  @param unreadCount The new number of unread messages.
  */
--(void)conversation:(SKCConversation*)conversation unreadCountDidChange:(NSUInteger)unreadCount;
+- (void)conversation:(SKCConversation *)conversation unreadCountDidChange:(NSUInteger)unreadCount;
 
 /**
  *  @abstract Asks the delegate if an in-app notification should be shown for a message.
@@ -421,7 +460,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  @see SKCMessage
  */
--(BOOL)conversation:(SKCConversation*)conversation shouldShowInAppNotificationForMessage:(SKCMessage*)message;
+- (BOOL)conversation:(SKCConversation *)conversation shouldShowInAppNotificationForMessage:(SKCMessage *)message;
 
 /**
  *  @abstract Asks the delegate if the conversation should show for the given action.
@@ -436,7 +475,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  @see SKCAction
  */
--(BOOL)conversation:(SKCConversation*)conversation shouldShowForAction:(SKCAction)action withInfo:(nullable NSDictionary *) info;
+- (BOOL)conversation:(SKCConversation *)conversation shouldShowForAction:(SKCAction)action withInfo:(nullable NSDictionary *) info;
 
 /**
  *  @abstract Gives the delegate the option to modify a message before it is sent
@@ -445,7 +484,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  @return the message to be sent
  */
--(SKCMessage *)conversation:(SKCConversation*)conversation willSendMessage:(SKCMessage *)message;
+- (SKCMessage *)conversation:(SKCConversation*)conversation willSendMessage:(SKCMessage *)message;
 
 /**
  *  @abstract Gives the delegate the option to modify a message before it is displayed. If nil is returned the message will be hidden
@@ -454,7 +493,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  @return the message to be displayed. If nil, the message won't get displayed
  */
--(nullable SKCMessage *)conversation:(SKCConversation*)conversation willDisplayMessage:(SKCMessage *)message;
+- (nullable SKCMessage *)conversation:(SKCConversation *)conversation willDisplayMessage:(SKCMessage *)message;
 
 /**
  *  @abstract Notifies the delegate of new incoming messages.
@@ -466,7 +505,7 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  @see SKCMessage
  */
--(void)conversation:(SKCConversation*)conversation didReceiveMessages:(NSArray*)messages;
+- (void)conversation:(SKCConversation *)conversation didReceiveMessages:(NSArray *)messages;
 
 /**
  *  @abstract Notifies the delegate when older messages in the conversation history have been received
@@ -476,7 +515,7 @@ extern NSString* const SKCConversationActivityKey;
  *  @param conversation The conversation object
  *  @param messages The messages that have been fetched
  */
--(void)conversation:(SKCConversation*)conversation didReceivePreviousMessages:(NSArray*)messages;
+- (void)conversation:(SKCConversation *)conversation didReceivePreviousMessages:(NSArray *)messages;
 
 /**
  *  @abstract Notifies the delegate of new conversation activity
@@ -486,7 +525,7 @@ extern NSString* const SKCConversationActivityKey;
  *  @param conversation The conversation object
  *  @param activity The activity that was received
  */
--(void)conversation:(SKCConversation *)conversation didReceiveActivity:(SKCConversationActivity *)activity;
+- (void)conversation:(SKCConversation *)conversation didReceiveActivity:(SKCConversationActivity *)activity;
 
 /**
  *  @abstract Asks the delegate if default handling should be performed for a message action.
@@ -495,35 +534,42 @@ extern NSString* const SKCConversationActivityKey;
  *
  *  @return YES to allow default handling. NO to perform custom handling.
  */
--(BOOL)conversation:(SKCConversation *)conversation shouldHandleMessageAction:(SKCMessageAction*)action;
+- (BOOL)conversation:(SKCConversation *)conversation shouldHandleMessageAction:(SKCMessageAction *)action;
 
 /**
  *  @abstract Notifies the delegate when the conversation is about to be presented.
  *
  *  @discussion Called in the viewWillAppear: method of the conversation view controller.
  */
--(void)conversation:(SKCConversation *)conversation willShowViewController:(UIViewController*)viewController;
+- (void)conversation:(SKCConversation *)conversation willShowViewController:(UIViewController *)viewController;
 
 /**
  *  @abstract Notifies the delegate when presentation of the conversation completes.
  *
  *  @discussion Called in the viewDidAppear: method of the conversation view controller.
  */
--(void)conversation:(SKCConversation *)conversation didShowViewController:(UIViewController*)viewController;
+- (void)conversation:(SKCConversation *)conversation didShowViewController:(UIViewController *)viewController;
 
 /**
  *  @abstract Notifies the delegate when the conversation is about to be dismissed.
  *
  *  @discussion Called in the viewWillDisappear: method of the conversation view controller.
  */
--(void)conversation:(SKCConversation *)conversation willDismissViewController:(UIViewController*)viewController;
+- (void)conversation:(SKCConversation *)conversation willDismissViewController:(UIViewController *)viewController;
 
 /**
  *  @abstract Notifies the delegate when dismissal of the conversation completes.
  *
  *  @discussion Called in the viewDidDisappear: method of the conversation view controller.
  */
--(void)conversation:(SKCConversation *)conversation didDismissViewController:(UIViewController*)viewController;
+- (void)conversation:(SKCConversation *)conversation didDismissViewController:(UIViewController *)viewController;
+
+/**
+ * @abstract Notifies the delegate when the conversations list was updated
+ *
+ * @param NSArray<SKCConversation> The updated array of SKCConversation
+ */
+- (void)conversationListDidRefresh:(NSArray<SKCConversation *> *)conversationList;
 
 @end
 NS_ASSUME_NONNULL_END
