@@ -2,7 +2,7 @@
 //  Sparkcentral.h
 //  Sparkcentral
 //
-//  version : 6.0.0
+//  version : 5.1.3
 
 #import <Foundation/Foundation.h>
 #import "SKCConversation.h"
@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol UNUserNotificationCenterDelegate;
 
-#define SPARKCENTRAL_VERSION @"6.0.0"
+#define SPARKCENTRAL_VERSION @"5.1.3"
 #define VENDOR_ID @"sparkcentral"
 
 FOUNDATION_EXPORT double SparkcentralVersionNumber;
@@ -171,7 +171,7 @@ extern NSString* const SKCLogoutDidCompleteNotification;
 extern NSString* const SKCLogoutDidFailNotification;
 
 /**
- * @abstract The core class used for interacting with Sparkcentral. Provides methods to initialize, configure, and interact with the library.
+ *  @abstract The core class used for interacting with Sparkcentral. Provides methods to initialize, configure, and interact with the library.
  */
 @interface Sparkcentral : NSObject
 
@@ -686,20 +686,9 @@ extern NSString* const SKCLogoutDidFailNotification;
  *
  * @abstract Updating the conversation delegate
  *
- * @discussion when called, a new delegate is set
+ *  @discussion when called, a new delegate is set
  */
-+ (void)updateConversationDelegate:(id<SKCConversationDelegate>)delegate __deprecated_msg("Use `setConversationDelegate` instead.");
-
-
-/**
- *
- * @abstract Set a conversation delegate may be used to receive callbacks when important changes happen in the conversation.
- *
- * @param delegate A conversation delegate conforming to `SKCConversationDelegate`.
- *
- * @discussion In a single conversation scenario, this delegate will be used for the single conversation. In a multi-conversation scenario, this delegate can be used to receive callbacks for changes in all conversations.
- */
-+ (void)setConversationDelegate:(id<SKCConversationDelegate>)delegate NS_SWIFT_NAME(setConversationDelegate(delegate:));
++ (void)updateConversationDelegate:(id<SKCConversationDelegate>)delegate;
 
 /**
  *

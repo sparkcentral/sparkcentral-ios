@@ -290,7 +290,7 @@ extern NSString * const SKCConversationActivityKey;
  *
  *  @see SKCConversationDelegate
  */
-@property(weak, readonly, nullable) id<SKCConversationDelegate> delegate;
+@property(weak, nullable) id<SKCConversationDelegate> delegate;
 
 /**
  *  @abstract Boolean representing whether there are previous messages in the conversation that can be fetched or not

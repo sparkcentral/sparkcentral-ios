@@ -7,7 +7,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// A class representing a user.
 @interface SKCUser : NSObject
 
 /**

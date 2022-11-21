@@ -28,7 +28,6 @@ extern NSString *const SKCMenuItemDocument;
  */
 extern NSString *const SKCMenuItemLocation;
 
-/// A class that exposes options to customise the SDK.
 @interface SKCSettings : NSObject
 
 /**

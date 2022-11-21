@@ -7,7 +7,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-/// A class representing a conversation participant.
 @interface SKCParticipant : NSObject <NSSecureCoding>
 
 /**

@@ -71,7 +71,6 @@ typedef NS_ENUM(NSInteger, SKCMessageUploadStatus) {
     SKCMessageUploadStatusNotUserMessage
 };
 
-/// A class representing a message.
 @interface SKCMessage : NSObject <NSSecureCoding>
 
 /**

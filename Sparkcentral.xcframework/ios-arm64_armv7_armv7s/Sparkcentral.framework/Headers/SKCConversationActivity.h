@@ -58,7 +58,6 @@ extern NSString *const SKCConversationActivityDataNameKey;
  */
 extern NSString *const SKCConversationActivityDataAvatarUrlKey;
 
-/// An activity related to a `SKCConversation`
 @interface SKCConversationActivity : NSObject
 
 /**

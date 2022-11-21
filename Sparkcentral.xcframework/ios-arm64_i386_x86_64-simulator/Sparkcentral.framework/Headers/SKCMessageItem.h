@@ -5,7 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-/// A class representing a message item.
 @interface SKCMessageItem : NSObject
 
 /**
