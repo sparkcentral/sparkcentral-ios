@@ -2,7 +2,7 @@
 //  Sparkcentral.h
 //  Sparkcentral
 //
-//  version : 7.0.0
+//  version : 12.4.0
 
 #import <Foundation/Foundation.h>
 #import "SKCConversation.h"
@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol UNUserNotificationCenterDelegate;
 
-#define SPARKCENTRAL_VERSION @"7.0.0"
+#define SPARKCENTRAL_VERSION @"12.4.0"
 #define VENDOR_ID @"sparkcentral"
 
 FOUNDATION_EXPORT double SparkcentralVersionNumber;
@@ -468,7 +468,7 @@ extern NSString* const SKCLogoutDidFailNotification;
 + (nullable SKCConversation *)conversation;
 
 /**
- * @abstract Get a conversationById. This is an asynchronous call and requires a callback to retrieve the result.
+ * @abstract Get a conversationById. This is an asynchronous call and requires a callback to retrieve the result. The callback may be called more than once.
  *
  * +initWithSettings:completionHandler: must have been called prior to calling this method.
  *
@@ -510,10 +510,8 @@ extern NSString* const SKCLogoutDidFailNotification;
  *  It is strongly recommended to only call this method in the case where a message is likely to be sent.
  *
  *  This method is called automatically when starting a conversation via the -sendMessage: or -sendImage:withProgress:completion: methods, or when a user sends a message via the conversation view controller.
- *
- *  @deprecated use + createConversationWithName:description:iconUrl:metadata:completionHandler instead
  */
-+(void)startConversationWithCompletionHandler:(nullable void(^)(NSError * _Nullable error, NSDictionary * _Nullable userInfo))completionHandler;
++(void)startConversationWithCompletionHandler:(nullable void(^)(NSError * _Nullable error, NSDictionary * _Nullable userInfo))completionHandler __attribute__((deprecated("Use + createConversationWithName:description:iconUrl:metadata:completionHandler instead.")));
 
 /**
  * @abstract Create a conversation for the current user, optionally sending a message of type text as part of the conversation creation
@@ -647,9 +645,8 @@ extern NSString* const SKCLogoutDidFailNotification;
  *  This method is called automatically if SKCSettings.enableAppDelegateSwizzling is set to YES.
  *
  *  @see SKCSettings
- *  @deprecated use +handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler: instead.
  */
-+(void)handleUserNotificationActionWithIdentifier:(NSString *)identifier withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)(void))completionHandler;
++(void)handleUserNotificationActionWithIdentifier:(NSString *)identifier withResponseInfo:(NSDictionary *)responseInfo completionHandler:(void (^)(void))completionHandler __attribute__((deprecated("Use + handleActionWithIdentifier:forRemoteNotification:withResponseInfo:completionHandler: instead.")));
 
 /**
  *  @abstract A set of categories used for handling and displaying Sparkcentral user notification actions.
@@ -718,6 +715,24 @@ extern NSString* const SKCLogoutDidFailNotification;
  *
  */
 + (BOOL)hasMoreConversations;
+
+/**
+ *
+ * @abstract Clears the last known user from both memory and persistence, for the provided app id.
+ *
+ * @discussion When called, the last known user info are reset back to nil and deleted from persistence, for the provided app id. This should be called before the initialization, it will have no effect otherwise.
+ *
+ */
++(void) forgetLastKnownUserForAppId:(NSString*)appId __attribute__((deprecated("This method is deprecated. Use resetLastKnownAuthenticatedUser instead.")));
+
+/**
+ *
+ * @abstract Clears the last known authenticated user from both memory and persistence.
+ *
+ * @discussion When called, the last known user info are reset back to nil and deleted from persistence. This should be called before the initialization, it will have no effect otherwise.
+ *
+ */
++(void)resetLastKnownAuthenticatedUser;
 
 @end
 NS_ASSUME_NONNULL_END

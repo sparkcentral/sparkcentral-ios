@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		8J6/qaYSWNyx9P0eK+PERP2Srtg=
+		Nw8kyuMwh2Lys1cq4y+0XbVYa/U=
 		</data>
 		<key>Headers/SKCAuthenticationDelegate.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/SKCConversation.h</key>
 		<data>
-		9+Kis8hnooceu7qS3/PUHrVv6YE=
+		vPQNkv2T9kVEDM8LDQgNd5oZjuo=
 		</data>
 		<key>Headers/SKCConversationActivity.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/SKCMessage.h</key>
 		<data>
-		PRe2OjF1Xl6+lmAHqaY+oMwLPus=
+		9yWkVpDXQ12+MIN2a1tI2zATIOw=
 		</data>
 		<key>Headers/SKCMessageAction.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Headers/SKCSettings.h</key>
 		<data>
-		mq1iN+raptT54TFJpjHZ7dN/R2Q=
+		4QagKGaTg3PNwZEL7ANT0p/84yA=
 		</data>
 		<key>Headers/SKCUser.h</key>
 		<data>
@@ -58,15 +58,23 @@
 		</data>
 		<key>Headers/Sparkcentral.h</key>
 		<data>
-		kMyUo7oWz5j8myWUfMG9MI5DxGE=
+		N1QDYUQygeSv/Txz4cnTwlmSxik=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		tdSnnFmeQAF+METa/rXtrBossYo=
+		qD/rMEhK7Pk8hut2/GpAljS8osM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		vZ/QysInU7KI6GSXN1Z5ZjkgCO8=
+		Cx8C9Tnqa1J9J+BjtUo5QkLLLWc=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ssQ6soydIpjk3Zh8+tbFkhRs/4s=
+		</data>
+		<key>SparkcentralSDK.xcconfig</key>
+		<data>
+		3VerUKPVE4r/DwTq1EzsLjhVeA4=
 		</data>
 		<key>ar.lproj/SparkcentralLocalizable.strings</key>
 		<dict>
@@ -114,7 +122,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1ndChTWcz8GC1g8g/ka3ZYUNrVo=
+			4ROJPl9t2Fd6ZpM5Z4/2NyHKYDM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -430,7 +438,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NWcEYi9963lVfTLaXH0ZByae7/gwf7oQt5hA3uhVB/s=
+			RRGPjePgGxEholX+u4hpkNXf5577MdWBj3hZ3m/npr8=
 			</data>
 		</dict>
 		<key>Headers/SKCAuthenticationDelegate.h</key>
@@ -444,7 +452,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Plw5TIbkw3vm4Asu1A/hflvFlJpOsQ4kwALXn3kpyFY=
+			sAXpqLNloFONjuzOuqRZMw1bEEvLktvEKA9RFuZPnR8=
 			</data>
 		</dict>
 		<key>Headers/SKCConversationActivity.h</key>
@@ -479,7 +487,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ITMQMKllydRDv67DfzBAtX4ROmafYwEfKM2um4Nz5Q=
+			x3lvQu7lN38YXJGh5NhtfbGoJ3vltDy1f1ZSborggNU=
 			</data>
 		</dict>
 		<key>Headers/SKCMessageAction.h</key>
@@ -507,7 +515,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JXkcgOsT41dZALt/c2aeDq6pLx2wz/vd+zbjGy2DgK4=
+			7p9ryi8DsRVrK6+8C+zseUjYtCU3VDzm/WlRSf73acI=
 			</data>
 		</dict>
 		<key>Headers/SKCUser.h</key>
@@ -521,14 +529,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9srE3yS/Fh1GRQkbRUgumi8Q0Ggc9fT4jbqCnarc6Uw=
+			ANl7p2YIw5ZZKm13xtzknav3wv9mZJyejbFkhRr/Drg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5Y5YyxAc/o5jWFzNgNaH3Fx8AKhcwyfK5eXDrPj3hjs=
+			eThvDWNkkoFxyroNaCtttQsCrjcDTQdcuxWNKtsThkU=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			37zyFvGS8B/IFrCjDNcGV7py9/h2IpsV9/c2t+eEPh0=
+			</data>
+		</dict>
+		<key>SparkcentralSDK.xcconfig</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			gl4/suco59uHFG33DfOn7i/HKxEfPFo7CEg74/oBuDw=
 			</data>
 		</dict>
 		<key>ar.lproj/SparkcentralLocalizable.strings</key>
@@ -595,7 +617,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5tPErebdQhiE1ZKz8lxUqJcOYgWXZV+V6vieLYizquM=
+			9N3AE3l+nHv7lMRsP17ocnZRuh78FvD+7wWRB4PqXp4=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -1,6 +1,6 @@
 framework module Sparkcentral {
   umbrella header "Sparkcentral.h"
-
   export *
+
   module * { export * }
 }

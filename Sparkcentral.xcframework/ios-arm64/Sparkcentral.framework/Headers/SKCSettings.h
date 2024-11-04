@@ -47,6 +47,14 @@ extern NSString *const SKCMenuItemLocation;
 + (instancetype)settingsWithIntegrationId:(NSString*)integrationId andAuthCode:(NSString *)authCode;
 
 /**
+ *  @abstract Initializes a settings object with the given integration id and a boolean to ignore the last known user.
+ *
+ *  @param integrationId A valid integration id retrieved from the Sparkcentral web portal.
+ *  @param ignoreLastKnownUser Setting this to `YES` will ignore the last known user.
+ */
++ (instancetype)settingsWithIntegrationId:(NSString*)integrationId andIgnoreLastKnownUser:(BOOL)ignoreLastKnownUser;
+
+/**
  *  @abstract The app id corresponding to your application.
  *
  *  @discussion App id can be retrieved from the Sparkcentral web portal
@@ -63,6 +71,8 @@ extern NSString *const SKCMenuItemLocation;
  *  This value may only be set once, and must be set at init time.
  */
 @property(nonatomic, copy) NSString *integrationId;
+
+@property(nonatomic, copy) NSString *serviceBaseUrl;
 
 /**
  *  @abstract The auth code being used to authenticate as an existing user.
