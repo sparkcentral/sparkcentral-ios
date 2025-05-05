@@ -16,4 +16,4 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-SPARKCENTRAL_SDK_VERSION_NUMBER=12.4.0
+SPARKCENTRAL_SDK_VERSION_NUMBER=12.6.0
